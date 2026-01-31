@@ -122,7 +122,7 @@ const Contact = () => {
                       className="bg-[#25D366] hover:bg-[#20BD5C] text-white"
                     >
                       <a 
-                        href="https://wa.me/919444411215?text=Hello, I would like to inquire about your products."
+                        href="https://web.whatsapp.com/send?phone=919444411215&text=Hello, I would like to inquire about your products."
                         target="_blank" 
                         rel="noopener noreferrer"
                       >
@@ -177,7 +177,7 @@ const Contact = () => {
               className="btn-gradient-primary px-8"
             >
               <a 
-                href="https://wa.me/919444411215?text=Hello, I would like to request a quote for chemicals."
+                href="https://web.whatsapp.com/send?phone=919444411215&text=Hello, I would like to request a quote for chemicals."
                 target="_blank" 
                 rel="noopener noreferrer"
               >

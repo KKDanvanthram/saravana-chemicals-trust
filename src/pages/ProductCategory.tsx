@@ -206,7 +206,7 @@ const ProductCategory = () => {
                 className="btn-gradient-primary"
               >
                 <a 
-                  href={`https://wa.me/919444411215?text=Hello, I would like to request a quote for ${product.title}.`}
+                  href={`https://web.whatsapp.com/send?phone=919444411215&text=Hello, I would like to request a quote for ${product.title}.`}
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
@@ -221,7 +221,7 @@ const ProductCategory = () => {
                 className="bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20"
               >
                 <a 
-                  href="https://wa.me/919444411215?text=Hello, I need technical assistance."
+                  href="https://web.whatsapp.com/send?phone=919444411215&text=Hello, I need technical assistance."
                   target="_blank" 
                   rel="noopener noreferrer"
                 >

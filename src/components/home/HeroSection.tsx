@@ -53,7 +53,7 @@ export function HeroSection() {
               className="btn-gradient-primary text-lg px-8 py-6"
             >
               <a 
-                href="https://wa.me/919444411215?text=Hello, I would like to request a quote." 
+                href="https://web.whatsapp.com/send?phone=919444411215&text=Hello, I would like to request a quote." 
                 target="_blank" 
                 rel="noopener noreferrer"
               >

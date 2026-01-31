@@ -62,7 +62,7 @@ export function Header() {
               className="btn-gradient-primary"
             >
               <a 
-                href="https://wa.me/919444411215?text=Hello, I would like to request a quote." 
+                href="https://web.whatsapp.com/send?phone=919444411215&text=Hello, I would like to request a quote." 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -112,7 +112,7 @@ export function Header() {
                   className="w-full btn-gradient-primary"
                 >
                   <a 
-                    href="https://wa.me/919444411215?text=Hello, I would like to request a quote." 
+                    href="https://web.whatsapp.com/send?phone=919444411215&text=Hello, I would like to request a quote." 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
