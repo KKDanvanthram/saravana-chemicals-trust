@@ -68,7 +68,7 @@ export function IndustriesSection() {
               <div className="space-y-4">
                 <div className="h-48 rounded-2xl bg-gradient-to-br from-primary to-brand-water-dark flex items-center justify-center p-6">
                   <div className="text-center text-primary-foreground">
-                    <span className="text-4xl font-bold block">500+</span>
+                    <span className="text-4xl font-bold block">1000+</span>
                     <span className="text-sm opacity-80">Industrial Clients</span>
                   </div>
                 </div>

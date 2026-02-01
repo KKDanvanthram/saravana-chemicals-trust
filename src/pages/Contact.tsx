@@ -17,20 +17,20 @@ const contactInfo = [
     details: [
       "93C/1 SIDCO Industrial Estate",
       "EB Road North Phase, Ambattur",
-      "Chennai, Tamil Nadu 600058",
+      "Chennai, Tamil Nadu 600098",
     ],
   },
   {
     icon: Phone,
     title: "Phone Numbers",
-    details: ["+91 9444411215", "+91 9444011215"],
-    links: ["tel:+919444411215", "tel:+919444011215"],
+    details: ["+91 44 26253999", "+91 44 26254999"],
+    links: ["tel:+914426253999", "tel:+914426254999"],
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["info@saravanachemicals.com"],
-    links: ["mailto:info@saravanachemicals.com"],
+    details: ["sales@saravanachem.com"],
+    links: ["mailto:sales@saravanachem.com"],
   },
   {
     icon: Clock,
@@ -122,7 +122,7 @@ const Contact = () => {
                       className="bg-[#25D366] hover:bg-[#20BD5C] text-white"
                     >
                       <a 
-                        href="https://web.whatsapp.com/send?phone=919444411215&text=Hello, I would like to inquire about your products."
+                        href="https://web.whatsapp.com/send?phone=919444011215&text=Hello, I would like to inquire about your products."
                         target="_blank" 
                         rel="noopener noreferrer"
                       >
@@ -177,7 +177,7 @@ const Contact = () => {
               className="btn-gradient-primary px-8"
             >
               <a 
-                href="https://web.whatsapp.com/send?phone=919444411215&text=Hello, I would like to request a quote for chemicals."
+                href="https://web.whatsapp.com/send?phone=919840953215&text=Hello, I would like to request a quote for chemicals."
                 target="_blank" 
                 rel="noopener noreferrer"
               >

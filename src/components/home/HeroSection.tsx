@@ -5,7 +5,7 @@ import heroImage from "@/assets/hero-water-treatment.jpg";
 
 const stats = [
   { icon: Award, value: "25+", label: "Years of Excellence" },
-  { icon: Shield, value: "500+", label: "Industrial Clients" },
+  { icon: Shield, value: "1000+", label: "Industrial Clients" },
   { icon: Leaf, value: "100%", label: "Quality Assured" },
 ];
 
@@ -53,7 +53,7 @@ export function HeroSection() {
               className="btn-gradient-primary text-lg px-8 py-6"
             >
               <a 
-                href="https://web.whatsapp.com/send?phone=919444411215&text=Hello, I would like to request a quote." 
+                href="https://web.whatsapp.com/send?phone=919840953215&text=Hello, I would like to request a quote." 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
