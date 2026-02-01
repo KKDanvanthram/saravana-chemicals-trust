@@ -155,7 +155,7 @@ const Industries = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="p-8 rounded-2xl bg-gradient-to-br from-primary to-brand-water-dark text-center">
-                <span className="text-5xl font-bold text-primary-foreground block mb-2">500+</span>
+                <span className="text-5xl font-bold text-primary-foreground block mb-2">1000+</span>
                 <span className="text-primary-foreground/80">Industrial Clients</span>
               </div>
               <div className="p-8 rounded-2xl bg-card text-center border border-border">

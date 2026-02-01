@@ -39,15 +39,18 @@ export function Footer() {
               alt="Sri Saravana Chemicals" 
               className="h-14 w-auto brightness-0 invert"
             />
-            <p className="text-sm text-primary-foreground/70 leading-relaxed">
+            <p className="text-sm text-primary-foreground/70 leading-relaxed mb-4">
               Established in 1997, Sri Saravana Chemicals is a trusted manufacturer 
               and supplier of high-quality chemical solutions across South India.
+            </p>
+            <p className="text-xs text-secondary font-medium mb-4">
+              New Branches: Vijayawada • Madurai • Rajapalayam
             </p>
             <div className="flex items-start gap-3 text-sm">
               <MapPin className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
               <span className="text-primary-foreground/80">
                 93C/1 SIDCO Industrial Estate EB Road North Phase, 
-                Ambattur, Chennai, Tamil Nadu 600058
+                Ambattur, Chennai, Tamil Nadu 600098
               </span>
             </div>
           </div>
@@ -93,18 +96,18 @@ export function Footer() {
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-secondary" />
                 <div className="text-sm">
-                  <a href="tel:+919444411215" className="text-primary-foreground/80 hover:text-secondary transition-colors block">
-                    +91 9444411215
+                  <a href="tel:+914426253999" className="text-primary-foreground/80 hover:text-secondary transition-colors block">
+                    +91 44 26253999
                   </a>
-                  <a href="tel:+919444011215" className="text-primary-foreground/80 hover:text-secondary transition-colors block">
-                    +91 9444011215
+                  <a href="tel:+914426254999" className="text-primary-foreground/80 hover:text-secondary transition-colors block">
+                    +91 44 26254999
                   </a>
                 </div>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-secondary" />
-                <a href="mailto:info@saravanachemicals.com" className="text-sm text-primary-foreground/80 hover:text-secondary transition-colors">
-                  info@saravanachemicals.com
+                <a href="mailto:sales@saravanachem.com" className="text-sm text-primary-foreground/80 hover:text-secondary transition-colors">
+                  sales@saravanachem.com
                 </a>
               </li>
               <li className="flex items-center gap-3">

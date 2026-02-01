@@ -18,6 +18,7 @@ const milestones = [
   { year: "2005", title: "Expansion to South India", description: "Extended operations to cover Tamil Nadu, AP, Karnataka" },
   { year: "2015", title: "R&D Excellence", description: "Established dedicated research and development facility" },
   { year: "2022", title: "Sustainability Focus", description: "Launched eco-friendly chemical solutions line" },
+  { year: "2024", title: "New Branches", description: "Opened new branches in Vijayawada, Madurai, and Rajapalayam" },
 ];
 
 const values = [
