@@ -51,18 +51,18 @@ export function Header() {
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
             <a 
-              href="tel:+919840953215" 
+              href="tel:+919444011215" 
               className="flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
             >
               <Phone className="h-4 w-4" />
-              +91 9840953215
+              +91 9444011215
             </a>
             <Button 
               asChild
               className="btn-gradient-primary"
             >
               <a 
-                href="https://web.whatsapp.com/send?phone=919840953215&text=Hello, I would like to request a quote." 
+                href="https://web.whatsapp.com/send?phone=919444011215&text=Hello, I would like to request a quote." 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -101,18 +101,18 @@ export function Header() {
               ))}
               <div className="pt-4 border-t border-border">
                 <a 
-                  href="tel:+919840953215" 
+                  href="tel:+919444011215" 
                   className="flex items-center gap-2 text-base font-medium text-foreground/80 mb-4"
                 >
                   <Phone className="h-5 w-5" />
-                  +91 9840953215
+                  +91 9444011215
                 </a>
                 <Button 
                   asChild
                   className="w-full btn-gradient-primary"
                 >
                   <a 
-                    href="https://web.whatsapp.com/send?phone=919840953215&text=Hello, I would like to request a quote." 
+                    href="https://web.whatsapp.com/send?phone=919444011215&text=Hello, I would like to request a quote." 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >

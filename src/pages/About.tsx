@@ -95,8 +95,8 @@ const About = () => {
               </div>
               <div className="p-6 rounded-2xl bg-gradient-to-br from-primary to-brand-water-dark text-center">
                 <Users className="h-10 w-10 text-primary-foreground mx-auto mb-3" />
-                <span className="text-4xl font-bold text-primary-foreground block">500+</span>
-                <span className="text-primary-foreground/80">Happy Clients</span>
+                <span className="text-4xl font-bold text-primary-foreground block">1000+</span>
+                <span className="text-primary-foreground/80">Industrial Clients</span>
               </div>
               <div className="p-6 rounded-2xl bg-gradient-to-br from-secondary to-brand-flame-light text-center">
                 <MapPin className="h-10 w-10 text-secondary-foreground mx-auto mb-3" />

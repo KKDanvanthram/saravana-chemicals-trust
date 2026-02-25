@@ -177,7 +177,7 @@ const Contact = () => {
               className="btn-gradient-primary px-8"
             >
               <a 
-                href="https://web.whatsapp.com/send?phone=919840953215&text=Hello, I would like to request a quote for chemicals."
+                href="https://web.whatsapp.com/send?phone=919444011215&text=Hello, I would like to request a quote for chemicals."
                 target="_blank" 
                 rel="noopener noreferrer"
               >

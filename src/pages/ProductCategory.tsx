@@ -206,7 +206,7 @@ const ProductCategory = () => {
                 className="btn-gradient-primary"
               >
                 <a 
-                  href={`https://web.whatsapp.com/send?phone=919840953215&text=Hello, I would like to request a quote for ${product.title}.`}
+                  href={`https://web.whatsapp.com/send?phone=919444011215&text=Hello, I would like to request a quote for ${product.title}.`}
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
