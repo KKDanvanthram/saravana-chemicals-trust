@@ -9,6 +9,7 @@ import {
   MessageCircle,
   Building2
 } from "lucide-react";
+import heroContactImg from "@/assets/hero-contact.jpg";
 
 const contactInfo = [
   {
@@ -43,8 +44,12 @@ const Contact = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-28 bg-gradient-to-br from-primary via-brand-water-dark to-foreground">
-        <div className="container mx-auto px-4">
+      <section className="relative py-20 lg:py-28">
+        <div className="absolute inset-0">
+          <img src={heroContactImg} alt="Corporate office" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 hero-gradient-overlay" />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 text-primary-foreground text-sm font-medium mb-6">
               <Building2 className="h-4 w-4 text-secondary" />

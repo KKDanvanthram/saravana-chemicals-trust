@@ -12,6 +12,7 @@ import {
   FlaskConical,
   CheckCircle2
 } from "lucide-react";
+import heroAboutImg from "@/assets/hero-about.jpg";
 
 const milestones = [
   { year: "1997", title: "Company Established", description: "Founded in Chennai with a vision to deliver quality chemicals" },
@@ -39,8 +40,12 @@ const About = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-28 bg-gradient-to-br from-primary via-brand-water-dark to-foreground">
-        <div className="container mx-auto px-4">
+      <section className="relative py-20 lg:py-28">
+        <div className="absolute inset-0">
+          <img src={heroAboutImg} alt="Chemical manufacturing facility" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 hero-gradient-overlay" />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 text-primary-foreground text-sm font-medium mb-6">
               <Award className="h-4 w-4 text-secondary" />
