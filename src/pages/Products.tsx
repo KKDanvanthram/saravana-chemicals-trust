@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { CTASection } from "@/components/home/CTASection";
-import { ArrowRight, Droplets, Factory, FlaskConical, Beaker, CheckCircle2, Download, Snowflake, Flame, Waves } from "lucide-react";
+import { ArrowRight, Droplets, Factory, FlaskConical, Beaker, CheckCircle2, Download, Snowflake } from "lucide-react";
+import heroProductsImg from "@/assets/hero-products.jpg";
 import waterTreatmentImg from "@/assets/water-treatment.jpg";
 import etpImg from "@/assets/etp-plant.jpg";
 import labImg from "@/assets/lab-chemicals.jpg";
@@ -97,8 +98,12 @@ const Products = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-28 bg-gradient-to-br from-primary via-brand-water-dark to-foreground">
-        <div className="container mx-auto px-4">
+      <section className="relative py-20 lg:py-28">
+        <div className="absolute inset-0">
+          <img src={heroProductsImg} alt="Chemical warehouse" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 hero-gradient-overlay" />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 text-primary-foreground text-sm font-medium mb-6">
               <FlaskConical className="h-4 w-4 text-secondary" />
