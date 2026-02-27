@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Droplets, Factory, FlaskConical, Beaker } from "lucide-react";
+import { ArrowRight, Droplets, Factory, FlaskConical, Beaker, Download, Snowflake } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Button } from "@/components/ui/button";
 import waterTreatmentImg from "@/assets/water-treatment.jpg";
 import etpImg from "@/assets/etp-plant.jpg";
 import labImg from "@/assets/lab-chemicals.jpg";
@@ -10,15 +11,15 @@ const products = [
   {
     id: "water-treatment",
     title: "Water Treatment Chemicals",
-    description: "Comprehensive range of chemicals for water purification, softening, and conditioning across industrial and municipal applications.",
+    description: "Boiler, R.O. Plant & Raw Water treatment chemicals including antiscalants, biocides, coagulants, and more.",
     icon: Droplets,
     image: waterTreatmentImg,
     path: "/products/water-treatment",
   },
   {
     id: "etp-chemicals",
-    title: "ETP Chemicals",
-    description: "Specialized solutions for effluent treatment plants, wastewater management, and environmental compliance.",
+    title: "ETP & Waste Water Chemicals",
+    description: "Activated Carbon, Ferric Chloride, Poly Aluminium Chloride, Flocculants, and Polyelectrolytes for effluent treatment.",
     icon: Factory,
     image: etpImg,
     path: "/products/etp-chemicals",
@@ -26,7 +27,7 @@ const products = [
   {
     id: "lab-chemicals",
     title: "Commercial & Lab Chemicals",
-    description: "High-purity chemicals for laboratories, research institutions, and commercial applications.",
+    description: "High-purity analytical grade reagents, laboratory acids & bases, indicators, and buffer solutions.",
     icon: FlaskConical,
     image: labImg,
     path: "/products/lab-chemicals",
@@ -34,7 +35,7 @@ const products = [
   {
     id: "industrial-solvents",
     title: "Industrial Solvents",
-    description: "Premium quality solvents for manufacturing, cleaning, and various industrial processes.",
+    description: "Acetone, Benzene, Methyl Ethyl Ketone, Methylene Di Chloride, and PEG variants for industrial processes.",
     icon: Beaker,
     image: solventsImg,
     path: "/products/industrial-solvents",
@@ -92,7 +93,16 @@ export function ProductsPreview() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        {/* Download Brochure + View All */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
+          <a
+            href="/Sri-Saravana-Chemicals-Brochure.pdf"
+            download
+            className="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-secondary/90 transition-colors"
+          >
+            <Download className="h-5 w-5" />
+            Download Brochure
+          </a>
           <Link 
             to="/products"
             className="inline-flex items-center gap-2 text-lg font-semibold text-primary hover:text-secondary transition-colors"

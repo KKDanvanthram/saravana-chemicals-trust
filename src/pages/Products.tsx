@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { CTASection } from "@/components/home/CTASection";
-import { ArrowRight, Droplets, Factory, FlaskConical, Beaker, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Droplets, Factory, FlaskConical, Beaker, CheckCircle2, Download, Snowflake, Flame, Waves } from "lucide-react";
 import waterTreatmentImg from "@/assets/water-treatment.jpg";
 import etpImg from "@/assets/etp-plant.jpg";
 import labImg from "@/assets/lab-chemicals.jpg";
@@ -16,42 +16,51 @@ const products = [
     icon: Droplets,
     image: waterTreatmentImg,
     path: "/products/water-treatment",
-    features: [
-      "Coagulants & Flocculants",
-      "pH Adjusters & Buffers",
-      "Scale & Corrosion Inhibitors",
-      "Biocides & Algaecides",
-      "Membrane Chemicals",
+    subcategories: [
+      {
+        name: "Boiler Application",
+        items: ["Cyclohexylamine", "Hydrazine Hydrate 80%", "Morpholine", "Sodium Hexa Meta Phosphate", "Sodium Sulphate", "Sulfamic Acid (Liquid/Powder)", "TriSodium Phosphate", "Antiscalant Inhibitor", "Condensate Conditioners", "Descaling Compound", "Dispersant", "Oxygen Scavengers", "pH Boosters"],
+      },
+      {
+        name: "R.O. Plant Application",
+        items: ["Anti Foulants", "Antiscalant", "Biocides", "Chlorine Remover", "Membrane Cleaner (High/Low pH)", "pH Boosters", "Polyelectrolyte", "Citric Acid", "Sodium Hypochlorite", "Sodium Meta Bisulphite", "Sulphuric Acid"],
+      },
+      {
+        name: "Raw Water Application",
+        items: ["Activated Carbon", "Aluminium Sulphate (Ferric/Non Ferric Alum)", "Ferric Chloride (Liquid/Lamp/Powder)", "Hydrochloric Acid", "Lime/Calcium Hydroxide", "Polyelectrolyte", "Sodium Aluminate", "Sodium Hydroxide/Caustic Soda"],
+      },
     ],
   },
   {
     id: "etp-chemicals",
-    title: "ETP Chemicals",
+    title: "ETP & Waste Water Treatment Chemicals",
     description: "Specialized chemical solutions for effluent treatment plants, wastewater management, and environmental compliance in industrial settings.",
     icon: Factory,
     image: etpImg,
     path: "/products/etp-chemicals",
-    features: [
-      "Defoamers & Antifoams",
-      "Heavy Metal Precipitants",
-      "Sludge Conditioners",
-      "Odor Control Chemicals",
-      "COD/BOD Reducers",
+    subcategories: [
+      {
+        name: "Waste Water Treatment",
+        items: ["Activated Carbon", "Aluminium Sulphate (Ferric/Non Ferric)", "Colour Coagulant", "Ferric Chloride (Liquid)", "Ferrous Sulphate", "Flocculants", "Lime/Calcium Hydroxide", "Poly Aluminium Chloride", "Polyelectrolyte (Cationic/Anionic)"],
+      },
     ],
   },
   {
-    id: "lab-chemicals",
-    title: "Commercial & Lab Chemicals",
-    description: "High-purity chemicals for analytical laboratories, research institutions, educational facilities, and commercial applications.",
-    icon: FlaskConical,
-    image: labImg,
-    path: "/products/lab-chemicals",
-    features: [
-      "Analytical Grade Reagents",
-      "Laboratory Acids & Bases",
-      "Organic Solvents",
-      "Indicators & Standards",
-      "Buffer Solutions",
+    id: "dg-hvac",
+    title: "D.G. Sets & H.V.A.C Chemicals",
+    description: "Specialized chemicals for diesel generator cooling systems and heating, ventilation & air conditioning applications.",
+    icon: Snowflake,
+    image: waterTreatmentImg,
+    path: "/products/dg-hvac",
+    subcategories: [
+      {
+        name: "D.G. Sets Application",
+        items: ["Antiscalant", "Cleaners", "Corrosion Inhibitors", "High Performance Cooling Media/Coolants", "Cartridge Filters"],
+      },
+      {
+        name: "H.V.A.C Application",
+        items: ["Antiscalant", "Biocides", "Corrosion Inhibitors", "Calcium Chloride", "Lithium Bromide", "Monoethylene Glycol", "Propylene Glycol"],
+      },
     ],
   },
   {
@@ -61,12 +70,25 @@ const products = [
     icon: Beaker,
     image: solventsImg,
     path: "/products/industrial-solvents",
-    features: [
-      "Cleaning Solvents",
-      "Degreasing Agents",
-      "Process Solvents",
-      "Specialty Solvents",
-      "Recycled Solvents",
+    subcategories: [
+      {
+        name: "Solvents",
+        items: ["Acetone", "Benzene", "Methyl Ethyl Ketone", "Methylene Di Chloride", "PEG 200/400/600/6000"],
+      },
+    ],
+  },
+  {
+    id: "lab-chemicals",
+    title: "Commercial & Lab Chemicals",
+    description: "High-purity chemicals for analytical laboratories, research institutions, educational facilities, and commercial applications.",
+    icon: FlaskConical,
+    image: labImg,
+    path: "/products/lab-chemicals",
+    subcategories: [
+      {
+        name: "Lab Grade Chemicals",
+        items: ["Analytical Grade Reagents", "Laboratory Acids & Bases", "Organic Solvents", "Indicators & Standards", "Buffer Solutions"],
+      },
     ],
   },
 ];
@@ -85,10 +107,18 @@ const Products = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6">
               Our Products
             </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/80">
+            <p className="text-lg md:text-xl text-primary-foreground/80 mb-8">
               Explore our comprehensive range of high-quality chemicals designed 
               for industrial, commercial, and laboratory applications.
             </p>
+            <a
+              href="/Sri-Saravana-Chemicals-Brochure.pdf"
+              download
+              className="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground rounded-lg font-medium hover:bg-secondary/90 transition-colors"
+            >
+              <Download className="h-5 w-5" />
+              Download Product Brochure
+            </a>
           </div>
         </div>
       </section>
@@ -107,7 +137,7 @@ const Products = () => {
             {products.map((product, index) => (
               <div 
                 key={product.id}
-                className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-center ${
+                className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-start ${
                   index % 2 === 1 ? "lg:flex-row-reverse" : ""
                 }`}
               >
@@ -134,14 +164,21 @@ const Products = () => {
                   <p className="text-muted-foreground mb-6">
                     {product.description}
                   </p>
-                  <ul className="space-y-3 mb-8">
-                    {product.features.map((feature) => (
-                      <li key={feature} className="flex items-center gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-primary shrink-0" />
-                        <span className="text-foreground">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
+
+                  {/* Product sub-categories with items */}
+                  {product.subcategories.map((sub) => (
+                    <div key={sub.name} className="mb-4">
+                      <h4 className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">{sub.name}</h4>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {sub.items.map((item) => (
+                          <span key={item} className="px-3 py-1 text-sm bg-accent text-accent-foreground rounded-full">
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+
                   <Link 
                     to={product.path}
                     className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
