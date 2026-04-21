@@ -121,6 +121,11 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    cursor: url('/flask-cursor.svg') 4 2, auto;
+  }
+
+  a, button, [role="button"], .cursor-pointer, label, summary, select, [onclick] {
+    cursor: url('/flask-cursor.svg') 4 2, pointer;
   }
 
   h1, h2, h3, h4, h5, h6 {
