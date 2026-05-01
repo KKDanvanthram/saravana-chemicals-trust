@@ -36,23 +36,30 @@ export function Footer() {
           <div className="space-y-6">
             <img 
               src={logo} 
-              alt="Sri Saravana Chemicals" 
+              alt="Saravana Sky Chemo Private Limited" 
               className="h-14 w-auto brightness-0 invert"
             />
             <p className="text-sm text-primary-foreground/70 leading-relaxed mb-4">
-              Established in 1997, Sri Saravana Chemicals is a trusted manufacturer 
+              Established in 1997, Saravana Sky Chemo Private Limited (formerly Sri Saravana Chemicals) is a trusted manufacturer 
               and supplier of high-quality chemical solutions across South India.
             </p>
             <p className="text-xs text-secondary font-medium mb-4">
-              New Branches: Vijayawada • Madurai • Rajapalayam
+              Branches: Chennai (HO) • Madurai • Coimbatore • Vijayawada
             </p>
-            <div className="flex items-start gap-3 text-sm">
-              <MapPin className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-              <span className="text-primary-foreground/80">
-                93C/1 SIDCO Industrial Estate EB Road North Phase, 
-                Ambattur, Chennai, Tamil Nadu 600098
-              </span>
-            </div>
+            <a
+              href="tel:04426253999"
+              className="flex items-center gap-3 text-sm text-primary-foreground/80 hover:text-secondary transition-colors"
+            >
+              <Phone className="h-5 w-5 text-secondary shrink-0" />
+              044-26253999 / 044-26254999
+            </a>
+            <a
+              href="mailto:saravanasky@saravanaskychemo.com"
+              className="flex items-center gap-3 text-sm text-primary-foreground/80 hover:text-secondary transition-colors"
+            >
+              <Mail className="h-5 w-5 text-secondary shrink-0" />
+              saravanasky@saravanaskychemo.com
+            </a>
           </div>
 
           {/* Quick Links */}
