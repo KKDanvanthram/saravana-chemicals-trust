@@ -76,33 +76,60 @@ const Contact = () => {
                 description="Connect with our team for all your chemical needs. We're committed to providing prompt responses and expert assistance."
               />
 
+              {/* Phone & Hours quick row */}
               <div className="grid sm:grid-cols-2 gap-6 mt-10">
-                {contactInfo.map((item) => (
-                  <div 
-                    key={item.title}
-                    className="p-6 rounded-2xl bg-card border border-border"
-                  >
-                    <div className="p-3 rounded-xl bg-accent w-fit mb-4">
-                      <item.icon className="h-6 w-6 text-primary" />
-                    </div>
-                    <h3 className="font-semibold text-foreground mb-3">{item.title}</h3>
-                    <div className="space-y-1">
-                      {item.details.map((detail, idx) => (
-                        item.links && item.links[idx] ? (
-                          <a 
-                            key={detail}
-                            href={item.links[idx]}
-                            className="block text-muted-foreground hover:text-primary transition-colors"
-                          >
-                            {detail}
-                          </a>
-                        ) : (
-                          <p key={detail} className="text-muted-foreground">{detail}</p>
-                        )
-                      ))}
-                    </div>
+                <div className="p-6 rounded-2xl bg-card border border-border">
+                  <div className="p-3 rounded-xl bg-accent w-fit mb-4">
+                    <Phone className="h-6 w-6 text-primary" />
                   </div>
-                ))}
+                  <h3 className="font-semibold text-foreground mb-3">Phone Numbers</h3>
+                  <div className="space-y-1">
+                    <a href="tel:04426253999" className="block text-muted-foreground hover:text-primary transition-colors">044-26253999</a>
+                    <a href="tel:04426254999" className="block text-muted-foreground hover:text-primary transition-colors">044-26254999</a>
+                  </div>
+                </div>
+                <div className="p-6 rounded-2xl bg-card border border-border">
+                  <div className="p-3 rounded-xl bg-accent w-fit mb-4">
+                    <Clock className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-foreground mb-3">Business Hours</h3>
+                  <div className="space-y-1">
+                    {businessHours.map((d) => (
+                      <p key={d} className="text-muted-foreground">{d}</p>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Branch Offices */}
+              <div className="mt-10 space-y-6">
+                <h3 className="text-2xl font-bold text-foreground">Our Offices</h3>
+                <div className="grid sm:grid-cols-2 gap-6">
+                  {branches.map((b) => (
+                    <div key={b.name} className="p-6 rounded-2xl bg-card border border-border space-y-3">
+                      <h4 className="font-semibold text-primary">{b.name}</h4>
+                      <p className="text-sm text-muted-foreground flex items-start gap-2">
+                        <MapPin className="h-4 w-4 text-secondary shrink-0 mt-0.5" />
+                        <span>{b.address}</span>
+                      </p>
+                      <a href={`mailto:${b.email}`} className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 break-all">
+                        <Mail className="h-4 w-4 text-secondary shrink-0" />
+                        {b.email}
+                      </a>
+                      {b.phones && (
+                        <div className="text-sm text-muted-foreground flex items-center gap-2">
+                          <Phone className="h-4 w-4 text-secondary shrink-0" />
+                          <span>{b.phones.join(" / ")}</span>
+                        </div>
+                      )}
+                      {b.website && (
+                        <a href={`https://${b.website}`} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors block">
+                          {b.website}
+                        </a>
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
 
               {/* WhatsApp CTA */}
