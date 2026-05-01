@@ -177,7 +177,7 @@ const Contact = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Sri Saravana Chemicals Location"
+                  title="Saravana Sky Chemo Private Limited Location"
                 />
               </div>
               <p className="text-muted-foreground text-sm">
