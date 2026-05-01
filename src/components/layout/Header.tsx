@@ -23,11 +23,11 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center shrink-0">
             <img 
               src={logo} 
               alt="Saravana Sky Chemo Private Limited" 
-              className="h-12 md:h-14 w-auto"
+              className="h-10 md:h-12 w-auto object-contain"
             />
           </Link>
 
