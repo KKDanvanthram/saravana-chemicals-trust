@@ -52,7 +52,7 @@ const About = () => {
               Established 1997
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6">
-              About Sri Saravana Chemicals
+              About Saravana Sky Chemo Private Limited
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/80">
               For over 25 years, we've been South India's trusted partner in chemical 
@@ -70,11 +70,11 @@ const About = () => {
               <SectionHeading
                 badge="Our Story"
                 title="A Legacy of Chemical Excellence"
-                description="Headquartered in Chennai, Sri Saravana Chemicals has grown from a local supplier to a regional leader in chemical solutions."
+                description="Headquartered in Chennai, Saravana Sky Chemo Private Limited (formerly Sri Saravana Chemicals) has grown from a local supplier to a regional leader in chemical solutions."
               />
               <div className="space-y-4 mt-8 text-muted-foreground">
                 <p>
-                  Established in 1997, Sri Saravana Chemicals began with a simple mission: 
+                  Established in 1997, Saravana Sky Chemo Private Limited (formerly Sri Saravana Chemicals) began with a simple mission: 
                   to provide high-quality chemicals that industries can rely on. Over the 
                   decades, we've expanded our capabilities while staying true to our core values.
                 </p>
