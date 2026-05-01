@@ -96,34 +96,63 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Business Hours */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Contact Us</h4>
+            <h4 className="text-lg font-semibold mb-6">Business Hours</h4>
             <ul className="space-y-4">
-              <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-secondary" />
-                <div className="text-sm">
-                  <a href="tel:+914426253999" className="text-primary-foreground/80 hover:text-secondary transition-colors block">
-                    +91 44 26253999
-                  </a>
-                  <a href="tel:+914426254999" className="text-primary-foreground/80 hover:text-secondary transition-colors block">
-                    +91 44 26254999
-                  </a>
-                </div>
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-secondary" />
-                <a href="mailto:sales@saravanachem.com" className="text-sm text-primary-foreground/80 hover:text-secondary transition-colors">
-                  sales@saravanachem.com
-                </a>
-              </li>
               <li className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-secondary" />
                 <span className="text-sm text-primary-foreground/80">
                   Mon - Sat: 9:00 AM - 6:00 PM
                 </span>
               </li>
+              <li>
+                <a href="https://www.saravanaskychemo.com" target="_blank" rel="noopener noreferrer" className="text-sm text-primary-foreground/80 hover:text-secondary transition-colors">
+                  www.saravanaskychemo.com
+                </a>
+              </li>
             </ul>
+          </div>
+        </div>
+
+        {/* Branch Offices */}
+        <div className="mt-12 pt-8 border-t border-primary-foreground/10">
+          <h4 className="text-lg font-semibold mb-6">Our Offices</h4>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                name: "Head Office – Chennai",
+                address: "93C/1, SIDCO Industrial Estate, EB Road, North Phase, Ambattur, Chennai – 600098",
+                email: "saravanasky@saravanaskychemo.com",
+              },
+              {
+                name: "Madurai Branch",
+                address: "A 151/9 Siva Complex, 7&8 Aruppukottai Main Road, Avaniapuram, Madurai 625012",
+                email: "madurai@saravanaskychemo.com",
+              },
+              {
+                name: "Coimbatore Branch",
+                address: "Door No.386/A3 Room No.7, 1st Floor J.K.Complex, Kamarajar Road, Peelamedu, Coimbatore 641015",
+                email: "cbe@saravanaskychemo.com",
+              },
+              {
+                name: "Vijayawada Branch",
+                address: "No 40-1-93 Kanna Nagar, Near Modern Super Market, Benz Circle, Vijayawada 520010",
+                email: "vijayawada@saravanaskychemo.com",
+              },
+            ].map((office) => (
+              <div key={office.name} className="space-y-2">
+                <h5 className="text-sm font-semibold text-secondary">{office.name}</h5>
+                <p className="text-xs text-primary-foreground/70 leading-relaxed flex items-start gap-2">
+                  <MapPin className="h-4 w-4 text-secondary shrink-0 mt-0.5" />
+                  <span>{office.address}</span>
+                </p>
+                <a href={`mailto:${office.email}`} className="text-xs text-primary-foreground/80 hover:text-secondary transition-colors flex items-center gap-2 break-all">
+                  <Mail className="h-4 w-4 text-secondary shrink-0" />
+                  {office.email}
+                </a>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -148,7 +177,7 @@ export function Footer() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-primary-foreground/60">
-              © 2026 Sri Saravana Chemicals. All Rights Reserved.
+              © 2026 Saravana Sky Chemo Private Limited. All Rights Reserved.
             </p>
             <p className="text-sm text-primary-foreground/60">
               25+ Years of Chemical Excellence for Industry & Environment
