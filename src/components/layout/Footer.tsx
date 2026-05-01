@@ -34,11 +34,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="space-y-6">
-            <div className="inline-block bg-primary-foreground/95 rounded-lg px-4 py-3 w-fit">
+            <div className="inline-block bg-white rounded-lg px-4 py-3 w-fit">
               <img 
                 src={logo} 
                 alt="Saravana Sky Chemo Private Limited" 
-                className="h-12 w-auto object-contain"
+                className="h-14 w-auto object-contain"
               />
             </div>
             <p className="text-sm text-primary-foreground/70 leading-relaxed mb-4">
