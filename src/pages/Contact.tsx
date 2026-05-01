@@ -11,34 +11,32 @@ import {
 } from "lucide-react";
 import heroContactImg from "@/assets/hero-contact.jpg";
 
-const contactInfo = [
+const branches = [
   {
-    icon: MapPin,
-    title: "Our Address",
-    details: [
-      "93C/1 SIDCO Industrial Estate",
-      "EB Road North Phase, Ambattur",
-      "Chennai, Tamil Nadu 600098",
-    ],
+    name: "Head Office – Chennai",
+    address: "93C/1, SIDCO Industrial Estate, EB Road, North Phase, Ambattur, Chennai – 600098",
+    email: "saravanasky@saravanaskychemo.com",
+    phones: ["044-26253999", "044-26254999"],
+    website: "www.saravanaskychemo.com",
   },
   {
-    icon: Phone,
-    title: "Phone Numbers",
-    details: ["+91 44 26253999", "+91 44 26254999"],
-    links: ["tel:+914426253999", "tel:+914426254999"],
+    name: "Madurai Branch",
+    address: "A 151/9 Siva Complex, 7&8 Aruppukottai Main Road, Avaniapuram, Madurai 625012",
+    email: "madurai@saravanaskychemo.com",
   },
   {
-    icon: Mail,
-    title: "Email",
-    details: ["sales@saravanachem.com"],
-    links: ["mailto:sales@saravanachem.com"],
+    name: "Coimbatore Branch",
+    address: "Door No.386/A3 Room No.7, 1st Floor J.K.Complex, Kamarajar Road, Peelamedu, Coimbatore 641015",
+    email: "cbe@saravanaskychemo.com",
   },
   {
-    icon: Clock,
-    title: "Business Hours",
-    details: ["Monday - Saturday", "9:00 AM - 6:00 PM IST"],
+    name: "Vijayawada Branch",
+    address: "No 40-1-93 Kanna Nagar, Near Modern Super Market, Benz Circle, Vijayawada 520010",
+    email: "vijayawada@saravanaskychemo.com",
   },
 ];
+
+const businessHours = ["Monday - Saturday", "9:00 AM - 6:00 PM IST"];
 
 const Contact = () => {
   return (
