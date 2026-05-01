@@ -26,7 +26,7 @@ export function Header() {
           <Link to="/" className="flex items-center">
             <img 
               src={logo} 
-              alt="Sri Saravana Chemicals" 
+              alt="Saravana Sky Chemo Private Limited" 
               className="h-12 md:h-14 w-auto"
             />
           </Link>
